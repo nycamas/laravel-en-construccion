@@ -7,23 +7,74 @@
 
     <!-- Bootstrap 5.3 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light d-flex align-items-center justify-content-center vh-100">
 
-    <div class="text-center">
-        <div class="mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="#ffc107" class="bi bi-tools" viewBox="0 0 16 16">
-                <path d="M1 0a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1.293l2.853 2.854a.5.5 0 0 0 .708 0l1.646-1.647a.5.5 0 0 0 0-.707L4.707 2H6a1 1 0 0 0 1-1V0H1zm14.854 13.854a.5.5 0 0 0 0-.708l-1.646-1.646a.5.5 0 0 0-.708 0l-2.854 2.853V15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-1.293l2.854-2.853z"/>
-            </svg>
-        </div>
-        <h1 class="display-5 fw-bold text-warning">Sitio en Construcción</h1>
-        <p class="lead text-muted">Estamos trabajando para traerte algo increíble. ¡Vuelve pronto!</p>
-        <div class="mt-4">
-            <a href="#" class="btn btn-outline-warning disabled">Volver al inicio</a>
-        </div>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            
+        }
+
+        .shadow-lg {
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+        }
+
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        .icon svg {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .btn-custom {
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(21, 77, 26, 0.5);
+        }
+
+        .rotate {
+            animation: spin 3s linear infinite;
+        }
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100">
+
+    <div class="text-center my-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#1a0352ff" class="bi bi-cone-striped shadow-lg" viewBox="0 0 16 16">
+            <path d="M9.828.122a.5.5 0 0 0-.656.263L5.5 9H2.5a.5.5 0 0 0-.485.621l1.5 6A.5.5 0 0 0 4 16h8a.5.5 0 0 0 .485-.379l1.5-6A.5.5 0 0 0 13.5 9h-3L9.828.122zM6.14 9l2.36-7.09L10.86 9H6.14z"/>
+        </svg>
+        <h1 class="mt-3 fw-bold text-warning">🚧 Sitio en Construcción</h1>
+        <p class="text-muted">Estamos trabajando para traerte algo increíble. ¡Vuelve pronto!</p>
     </div>
 
-    <!-- Bootstrap JS (opcional) -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
